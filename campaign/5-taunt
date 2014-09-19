@@ -1,0 +1,3 @@
+words = ['butts','turn down', 'yesh', 'pandas']
+for phrase in words:
+    self.say(phrase)
