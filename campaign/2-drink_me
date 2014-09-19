@@ -1,0 +1,12 @@
+movement_instructions = [ "right", "attack", "right", "down", "up", "right","attack"]
+for move in movement_instructions:
+    if move == "left":
+        self.moveLeft()
+    elif move == "right":
+        self.moveRight()
+    elif move == "down":
+        self.moveDown()
+    elif move == "up":
+        self.moveUp()
+    elif move =="attack":
+        self.attackNearbyEnemy()
