@@ -1,0 +1,23 @@
+#each mob has a radius of 20
+
+orders =  [{'action':'move','x':27,'y':49},{'action':'attack','x':45,'y':65},{'action':'attack','x':31,'y':55},{'action':'move','x':30,'y':26}, {'action':'attack','x':46,'y':5}, {'action':'move','x':42,'y':59}, {'action':'attack','x':70,'y':57}, {'action':'attack','x':63,'y':52}]
+
+for order in orders:
+    if order['action'] == 'move':
+        self.moveXY(order['x'],order['y'])
+    elif order['action'] == 'attack':
+        self.attackXY(order['x'],order['y'])
+    else
+        
+
+
+
+#Original Documentation         
+#self.moveXY(30, 26)   # Move into range
+#self.attackXY(46, 5)   # Shoot once in the middle of the ogres
+
+
+# If they survive a hit, ogres retaliate!
+# Larger ogres take more than one hit...
+# So, position and aim carefully.
+
