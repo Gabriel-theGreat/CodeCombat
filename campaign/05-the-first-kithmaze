@@ -1,7 +1,4 @@
-# Navigate through the maze.
-
-
-# This function is put at the top, else the compiler insist on using this.simple_boots
+#Navigate through the maze.
 def simple_boots(move):
     if move == 'right':
         self.moveRight()
@@ -12,13 +9,10 @@ def simple_boots(move):
     elif move == 'down':
         self.moveDown()
 
-def longsword(target):
-    self.attack(target)
+orders = ['down','right','right','up','right']
 
-orders =  [{'action':'move','direction':'right'},{'action':'move','direction':'down'},{'action':'move','direction':'right'},{'action':'move','direction':'right'}{'action':'move','direction':'up'}]]
-
-for order in orders:
-    if order['action'] == 'move':
-        simple_boots(order['direction'])
-    elif order['action'] == 'attack':
-        longsword(order['target'])
+# This function is put at the top, else the compiler insist on using this.simple_boots
+simple_boots('right')
+while 1 < 2
+    for order in orders:
+        simple_boots(order)
