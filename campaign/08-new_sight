@@ -1,0 +1,5 @@
+# Break down the door!
+# It will take many hits, so use a loop.
+
+self.attack("Door")
+
