@@ -15,12 +15,7 @@ def simple_boots(move):
 def longsword(target):
     self.attack(target)
 
-orders =  [{'action':'attack','target':'Door'},{'action':'attack','target':'Door'}, {'action':'move','direction':'up'}]
-
-while 1 <2:
-for order in orders:
-    if order['action'] == 'move':
-        simple_boots(order['direction'])
-    elif order['action'] == 'attack':
-        longsword(order['target'])
-
+door_health = 42
+while door_health > 0 :
+    longsword('Door')
+    door_health = door_health - 6
