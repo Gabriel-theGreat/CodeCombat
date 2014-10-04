@@ -12,12 +12,15 @@ def simple_boots(move):
 def longsword(target):
     self.attack(target)
 
+def attackNearest():
+    enemy = self.getNearestEnemy()
+    longsword(enemy)
+    longsword(enemy)
+
 orders =  [{'action':'move','direction':'right'},{'action':'attack'},{'action':'move','direction':'right'},{'action':'move','direction':'right'},{'action':'attack'},{'action':'move','direction':'down'},{'action':'move','direction':'right'}]
 
 for order in orders:
     if order['action'] == 'move':
         simple_boots(order['direction'])
     elif order['action'] == 'attack':
-        enemy = self.getNearestEnemy()
-        longsword(enemy)
-        longsword(enemy)
+       attackNearest()
