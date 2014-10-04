@@ -1,14 +1,6 @@
-# Defend against Brak and Zort!
-# You must attack Munchkins twice.
+# Defeat the ogres. 
+# Remember that they each take two hits.
 
-#Original Code:
-#self.moveRight()
-#self.attack("Brak")
-#self.attack("Brak")
-
-# Evade the munchkin. Grab the gems.
-
-# This function is put at the top, else the compiler insist on using this.simple_boots
 def simple_boots(move):
     if move == 'right':
         self.moveRight()
@@ -22,7 +14,7 @@ def simple_boots(move):
 def longsword(target):
     self.attack(target)
 
-orders =  [{'action':'move','direction':'right'},{'action':'attack','target':'Brak'},{'action':'attack','target':'Brak'},{'action':'move','direction':'right'},{'action':'move','direction':'right'},{'action':'attack','target':'Zort'},{'action':'attack','target':'Zort'},{'action':'move','direction':'right'}]
+orders =  [{'action':'attack','target':'Beebop'},{'action':'attack','target':'Beebop'},{'action':'attack','target':'Ack'},{'action':'attack','target':'Ack'},{'action':'attack','target':'Smashy'},{'action':'attack','target':'Smashy'}]
 
 for order in orders:
     if order['action'] == 'move':
