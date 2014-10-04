@@ -1,13 +1,23 @@
 # Uncomment the variable and attack!
+def simple_boots(move):
+    if move == 'right':
+        self.moveRight()
+    elif move == 'left':
+        self.moveLeft()
+    elif move == 'up':
+        self.moveUp()
+    elif move == 'down':
+        self.moveDown()
 
-#self.moveRight()
-#enemy = self.getNearestEnemy()
-#self.attack(enemy)
-#self.attack(enemy)
+def longsword(target):
+    self.attack(target)
 
-# Grab the gem and move so you can see the second munchkin.
+orders =  [{'action':'move','direction':'right'},{'action':'attack'},{'action':'move','direction':'down'},{'action':'move','direction':'up'},{'action':'move','direction':'right'},{'action':'attack'},{'action':'move','direction':'down'}]
 
-
-
-# Now use another variable to attack it!
-
+for order in orders:
+    if order['action'] == 'move':
+        simple_boots(order['direction'])
+    elif order['action'] == 'attack':
+        enemy = self.getNearestEnemy()
+        longsword(enemy)
+        longsword(enemy)
