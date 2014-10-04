@@ -1,8 +1,23 @@
-self.moveRight()
+# Uncomment the variable and attack!
+def simple_boots(move):
+    if move == 'right':
+        self.moveRight()
+    elif move == 'left':
+        self.moveLeft()
+    elif move == 'up':
+        self.moveUp()
+    elif move == 'down':
+        self.moveDown()
 
-# You should recognize this from the last level.
-enemy = self.getNearestEnemy()
-# Now attack the variable.
+def longsword(target):
+    self.attack(target)
 
-# And there's another room to clear!
+orders =  [{'action':'move','direction':'right'},{'action':'attack'},{'action':'move','direction':'right'},{'action':'move','direction':'right'},{'action':'attack'},{'action':'move','direction':'down'},{'action':'move','direction':'right'}]
 
+for order in orders:
+    if order['action'] == 'move':
+        simple_boots(order['direction'])
+    elif order['action'] == 'attack':
+        enemy = self.getNearestEnemy()
+        longsword(enemy)
+        longsword(enemy)
