@@ -1,0 +1,8 @@
+self.moveRight()
+
+# You should recognize this from the last level.
+enemy = self.getNearestEnemy()
+# Now attack the variable.
+
+# And there's another room to clear!
+
