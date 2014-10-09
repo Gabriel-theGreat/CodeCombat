@@ -4,15 +4,19 @@ items =  self.getItems()
 if len(items) == 0 : 
     self.moveXY(18, 36) 
     return
-elifkk
 
 target = items[0]
-item_value_dictionary = {}
+item_ranking = {}
 
 for item in self.getItems():
-    for items 
-    item_value_dictionary[item.id]=item.bountyGold / self.distance(item)
-    if item_value_dictionary[target.id] <  item_value_dictionary[item.id] :
-        target = item
-
+    for neighbor in self.getItems():
+        if item.distance == 0:
+            neighbor_value = 1
+        else:    
+            neighbor_value = neighbor.bountyGold / item.distance(neighbor)
+        item_ranking[item] = item_ranking[item] + neighbor_value
+    item_value =  item.bountyGold / self.distance(item)
+    item_ranking[item.id]=item_value
+    if item_ranking[target.id] <  item_ranking[item.id] :
+        target = item     
 self.move(target.pos)
